@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        />
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_toast"
+        />
+
+    <Button
+        android:id="@+id/menus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custome Menus"
+        />
+
+    <Button
+        android:id="@+id/AlertDialogbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlertDialogbox" />
+
+    <Button
+        android:id="@+id/custome_alertDialogBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom alertDialogBox" />
+
+    <Button
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Webview" />
+
+    <Button
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gridview" />
+
+    <Button
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView" />
+
+    <Button
+        android:id="@+id/fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment" />
+
+    <Button
+        android:id="@+id/navgraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigation" />
+
+    <Button
+        android:id="@+id/implicit_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="implicit_intent" />
+
+    <Button
+        android:id="@+id/DataPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DataPass" />
+
+    <Button
+        android:id="@+id/BottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomNavigation" />
+
+    <Button
+        android:id="@+id/DateTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DateTimePicker" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration" />
+    <Button
+        android:id="@+id/KotlinCoroutines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KotlinCoroutines" />
+
+    <Button
+        android:id="@+id/RealTimeDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RealTimeDatabase" />
+
+    <Button
+        android:id="@+id/ImageUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageUpload" />
+    <Button
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video" />
+    <Button
+        android:id="@+id/Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification" />
+
+    <Button
+        android:id="@+id/sharedpreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sharedpreference" />
+    <Button
+        android:id="@+id/retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retrofit" />
+    <Button
+        android:id="@+id/BioMetric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BioMetric" />
+    <Button
+        android:id="@+id/Intersetitial_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intersetitial_ad" />
+    <Button
+        android:id="@+id/Rewarded_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewarded_ad" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+</LinearLayout>
+</ScrollView>

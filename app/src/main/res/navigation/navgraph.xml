@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/fragment_Green">
+
+    <fragment
+        android:id="@+id/fragment_Green"
+        android:name="com.rk.afterstart.fragments.Fragment_Green"
+        android:label="fragment__green"
+        tools:layout="@layout/fragment__green" >
+        <action
+            android:id="@+id/action_fragment_Green_to_fragment_Yellow"
+            app:destination="@id/fragment_Yellow" />
+        <action
+            android:id="@+id/action_fragment_Green_to_fragment_Red"
+            app:destination="@id/fragment_Red" />
+        <action
+            android:id="@+id/action_fragment_Green_to_retriveFromRealTimeFragment"
+            app:destination="@id/retriveFromRealTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Red"
+        android:name="com.rk.afterstart.fragments.Fragment_Red"
+        android:label="fragment__red"
+        tools:layout="@layout/fragment__red" >
+        <action
+            android:id="@+id/action_fragment_Red_to_fragment_Green"
+            app:destination="@id/fragment_Green" />
+        <action
+            android:id="@+id/action_fragment_Red_to_fragment_Yellow"
+            app:destination="@id/fragment_Yellow" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Yellow"
+        android:name="com.rk.afterstart.fragments.Fragment_Yellow"
+        android:label="fragment__yellow"
+        tools:layout="@layout/fragment__yellow" >
+        <action
+            android:id="@+id/action_fragment_Yellow_to_fragment_Green"
+            app:destination="@id/fragment_Green" />
+        <action
+            android:id="@+id/action_fragment_Yellow_to_fragment_Red"
+            app:destination="@id/fragment_Red" />
+    </fragment>
+    <fragment
+        android:id="@+id/retriveFromRealTimeFragment"
+        android:name="RetriveFromRealTimeFragment"
+        android:label="RetriveFromRealTimeFragment" >
+        <action
+            android:id="@+id/action_retriveFromRealTimeFragment_to_fragment_Green"
+            app:destination="@id/fragment_Green" />
+        <action
+            android:id="@+id/action_retriveFromRealTimeFragment_to_fragment_Green2"
+            app:destination="@id/fragment_Green" />
+    </fragment>
+</navigation>

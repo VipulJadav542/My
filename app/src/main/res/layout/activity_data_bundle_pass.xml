@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DataBundlePass">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/registration"
+    android:textAlignment="center"
+    android:textColor="#471616"
+    android:textColorLink="@color/black"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.237" />
+
+<Button
+    android:id="@+id/submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="264dp"
+    android:text="@string/submit"
+    android:textColor="#FFEB3B"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+<EditText
+    android:id="@+id/city"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:autofillHints=""
+    android:ems="10"
+    android:hint="@string/enter_your_city"
+    android:inputType="text"
+    android:minHeight="48dp"
+    android:textColorHint="#78909C"
+    app:layout_constraintBottom_toTopOf="@+id/mobile"
+    app:layout_constraintStart_toStartOf="@+id/name"
+    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+<EditText
+    android:id="@+id/mobile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autofillHints=""
+    android:ems="10"
+    android:hint="@string/enter_your_mobile_number"
+    android:inputType="text"
+    android:minHeight="48dp"
+    android:textColorHint="#78909C"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.485" />
+
+<EditText
+    android:id="@+id/email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:autofillHints=""
+    android:ems="10"
+    android:hint="@string/enter_your_email"
+    android:inputType="text"
+    android:minHeight="48dp"
+    android:textColorHint="#78909C"
+    app:layout_constraintBottom_toTopOf="@+id/submit"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

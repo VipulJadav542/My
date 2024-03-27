@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.NOTIFICATION_POLICY_ACCESS_SETTINGS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <application
+        android:name=".Notification.Chanels"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AfterStart"
+        tools:targetApi="31"
+        >
+        <activity
+            android:name=".BioMetric"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Slider"
+            android:exported="false" />
+        <activity
+            android:name=".Responsive"
+            android:exported="true"
+            android:label="@string/title_activity_responsive"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.AfterStart.NoActionBar"
+            />
+        <activity
+            android:name=".SharedPreferences"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneAuth.Numbers"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneAuth.OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoUpload"
+            android:exported="false" />
+        <activity
+            android:name=".ImageUpload"
+            android:exported="false" />
+        <activity
+            android:name=".RetriveFromRealTime"
+            android:exported="false" />
+        <activity
+            android:name=".RealTimeDatabase"
+            android:exported="false" />
+        <activity
+            android:name=".KotlinCoroutines"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".DateTimePicker"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavigationBar"
+            android:exported="false" />
+        <activity
+            android:name=".RecieveData"
+            android:exported="false" />
+        <activity
+            android:name=".DataBundlePass"
+            android:exported="false" />
+        <activity
+            android:name=".EmplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name=".Navigation"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayout"
+            android:exported="false" />
+        <activity
+            android:name=".NewsAPI.NewsAPI"
+            android:exported="false" />
+        <activity
+            android:name=".WebView1"
+            android:exported="false" />
+        <activity
+            android:name=".SplaceScreen"
+            android:exported="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".CustomeTaostWithForm"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7916447281499135~5270738399" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/ga_ad_services_config"
+            tools:replace="android:resource" />
+
+        <!-- Add the following property inside the meta-data tag to resolve the conflict -->
+    </application>
+
+</manifest>
